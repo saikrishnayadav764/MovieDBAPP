@@ -1,5 +1,5 @@
-// const API_KEY = 'deae37e2afe6623618daef82255e93fe';
-const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkZWFlMzdlMmFmZTY2MjM2MThkYWVmODIyNTVlOTNmZSIsInN1YiI6IjY2MTRkMGZhNTkwMDg2MDE4NTdlZjBjZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ub4ThD8hcN7f82H17RkXKgkk7Kh0ng32cbimtcm3HV8';
+const API_KEY = 'deae37e2afe6623618daef82255e93fe';
+// const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkZWFlMzdlMmFmZTY2MjM2MThkYWVmODIyNTVlOTNmZSIsInN1YiI6IjY2MTRkMGZhNTkwMDg2MDE4NTdlZjBjZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ub4ThD8hcN7f82H17RkXKgkk7Kh0ng32cbimtcm3HV8';
 
 // Fetching popular movies
 export const getPopularMovies = async () => {
