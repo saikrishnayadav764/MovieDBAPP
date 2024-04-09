@@ -5,6 +5,9 @@
   box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
+.horizontal{
+  display: none;
+}
 /* Links */
 a {
   text-decoration: none;
@@ -77,6 +80,7 @@ nav button:hover {
   overflow: hidden;
   width: 200px;
   color: white;
+  height: 100%;
 }
 
 .movie-card img {
@@ -114,9 +118,9 @@ nav button:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 76%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   clip-path: polygon(0 1%, 82% 0, 100% 100%, 0% 100%);
 }
 
@@ -163,10 +167,18 @@ nav button:hover {
   height: auto;
   border-radius: 5px;
   margin-bottom: 5px;
+
 }
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+  .horizontal{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -189,14 +201,16 @@ nav button:hover {
   }
 
   nav ul li {
+    display: block;
     margin-right: 0;
+    /* border-bottom: 1px solid #fff;   */
     margin-bottom: 10px;
     list-style: none;
   }
 
   nav ul li a {
     display: block;
-    border-bottom: 1px solid #fff;  
+    /* border-bottom: 1px solid #fff;   */
     padding-bottom: 5px;  
     width: 100%;  
   }
@@ -207,14 +221,14 @@ nav button:hover {
 }
 
 @media screen and (max-width: 576px) {
-  .movie-header img {
+  /* .movie-header img {
     width: 150px;
     height: 200px;
   }
 
   .movie-header-details h2 {
     font-size: 18px;
-  }
+  } */
 
   nav ul li {
     margin-right: 10px;
