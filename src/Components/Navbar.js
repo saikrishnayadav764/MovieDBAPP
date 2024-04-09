@@ -18,9 +18,13 @@ const Navbar = () => {
       </div>
       <div className="nav-right">
         <ul>
+        {/* <hr className='horizontal'/> */}
           <li><Link to="/">Popular</Link></li>
+          <hr className='horizontal'/>
           <li><Link to="/top-rated">Top Rated</Link></li>
+          <hr className='horizontal'/>
           <li><Link to="/upcoming">Upcoming</Link></li>
+          <hr className='horizontal'/>
         </ul>
         <div>
           <input
