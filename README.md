@@ -1,4 +1,3 @@
-# Site is Working with only vpn
 
 # Deployed link: https://movie-dbapp.vercel.app/
 
