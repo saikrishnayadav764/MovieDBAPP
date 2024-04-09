@@ -1,0 +1,91 @@
+const API_KEY = '0e59b98ca42c7985896953f0db903842';
+
+// Fetch popular movies
+export const getPopularMovies = async () => {
+  try {
+    const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`);
+    if (!response.ok) {
+      throw new Error('Failed to fetch popular movies');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching popular movies:', error);
+    return null;
+  }
+};
+
+// Fetch top-rated movies
+export const getTopRatedMovies = async () => {
+  try {
+    const response = await fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`);
+    if (!response.ok) {
+      throw new Error('Failed to fetch top rated movies');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching top rated movies:', error);
+    return null;
+  }
+};
+
+// Fetch upcoming movies
+export const getUpcomingMovies = async () => {
+  try {
+    const response = await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&language=en-US&page=1`);
+    if (!response.ok) {
+      throw new Error('Failed to fetch upcoming movies');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching upcoming movies:', error);
+    return null;
+  }
+};
+
+// Fetch movie details by id
+export const getMovieDetails = async (id) => {
+  try {
+    const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`);
+    if (!response.ok) {
+      throw new Error('Failed to fetch movie details');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching movie details:', error);
+    return null;
+  }
+};
+
+// Fetch movie credits by id
+export const getMovieCredits = async (id) => {
+  try {
+    const response = await fetch(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=${API_KEY}&language=en-US`);
+    if (!response.ok) {
+      throw new Error('Failed to fetch movie credits');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching movie credits:', error);
+    return null;
+  }
+};
+
+// Search movies by name
+export const searchMovies = async (query) => {
+  try {
+    const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&query=${query}&page=1`);
+    if (!response.ok) {
+      throw new Error('Failed to search movies');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error searching movies:', error);
+    return null;
+  }
+};
