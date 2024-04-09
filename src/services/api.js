@@ -1,4 +1,4 @@
-const API_KEY = '247b3eddde6bbdeda9050b57f79e6302';
+const API_KEY = 'deae37e2afe6623618daef82255e93fe';
 
 // Fetching popular movies
 export const getPopularMovies = async () => {
