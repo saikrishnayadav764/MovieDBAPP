@@ -179,6 +179,9 @@ nav button:hover {
     padding: 0;
     margin-bottom: 10px;
   }
+  .search input{
+    width: 78vw;
+  }
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -229,6 +232,10 @@ nav button:hover {
   .movie-header-details h2 {
     font-size: 18px;
   } */
+
+  .search input{
+    width: 78vw;
+  }
 
   .movie-card{
     width: 300px;
