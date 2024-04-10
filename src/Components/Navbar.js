@@ -26,7 +26,7 @@ const Navbar = () => {
           <li><Link to="/upcoming">Upcoming</Link></li>
           <hr className='horizontal'/>
         </ul>
-        <div>
+        <div className="search">
           <input
             type="text"
             placeholder="Search movie name"
