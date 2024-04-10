@@ -230,9 +230,10 @@ nav button:hover {
     font-size: 18px;
   } */
 
-  .movie-card{
-    align-items: center;
+  .movie-list {
+    justify-content: center; /* Center the items horizontally */
   }
+
 
   nav ul li {
     margin-right: 10px;
