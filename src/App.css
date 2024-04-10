@@ -230,6 +230,10 @@ nav button:hover {
     font-size: 18px;
   } */
 
+  .movie-card{
+    width: 300px;
+  }
+  
   .movie-list {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
