@@ -1,4 +1,4 @@
-# Deployed link: sometimes it is working with only vpn
+# sometimes it is working with only vpn
 # Deployed link: https://movie-dbapp.vercel.app/
 
 # codesanbox link
